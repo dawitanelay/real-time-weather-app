@@ -18,8 +18,10 @@ const forcast =(latitude,longtitude,callback)=>
         callback('Unable to fined location',undefined)
      } else
      {
+
+
         
-        callback(undefined, body.current.weather_descriptions + '.  It is currently  ' + body.current.temperature + ' degress out. With  ' + body.current.humidity +' humidity and ' + body.current.cloudcover+' cloudcover .')
+        callback(undefined, body.current.weather_descriptions + '.  It is currently  ' + body.current.temperature + ' degress out. With  ' + body.current.humidity +'% humidity and ' + body.current.cloudcover+'% cloudcover .')
         
 
      }
