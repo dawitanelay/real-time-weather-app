@@ -13,6 +13,7 @@ const viewDir = path.join(__dirname,'../teamplate/views')
 const paritalDir = path.join(__dirname,'../teamplate/partials')
 
 const app = express()
+const port = process.env.PORT || 3000
 // setup for handlebar and view engine
 app.set('view engine', 'hbs')
 app.set('views',viewDir)
@@ -115,8 +116,8 @@ app.get('*',(req,res)=>{
 
 
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
 
-    console.log('Server is up on port 3000')
+    console.log('Server is up on port '+ port)
 
 })
