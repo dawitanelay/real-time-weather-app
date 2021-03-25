@@ -13,7 +13,7 @@ const viewDir = path.join(__dirname,'../teamplate/views')
 const paritalDir = path.join(__dirname,'../teamplate/partials')
 
 const app = express()
-const port = process.env.PORT || 80
+const port = process.env.PORT || 81
 // setup for handlebar and view engine
 app.set('view engine', 'hbs')
 app.set('views',viewDir)
@@ -36,8 +36,8 @@ app.get('/weather',(req,res)=>{
  
     if(!req.query.address)
 
-    {
-     return res.send({
+    { 
+     return res.send({ 
          error:'You must provide a search term'
      })
 
@@ -119,6 +119,6 @@ app.get('*',(req,res)=>{
 
 app.listen(port,()=>{
 
-    console.log('Server is up on port '+ port)
+    console.log('Server is up on port '+ port) 
 
 })
