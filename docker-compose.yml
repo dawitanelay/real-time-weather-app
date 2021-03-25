@@ -1,0 +1,12 @@
+version: "3"
+services:
+  web:
+    build:
+      context: .
+    volumes:
+      - .:/usr/app/src
+      - /usr/app/src/node_modules
+    ports:
+      - "9000:80" 
+    environment:
+      - PORT=80 

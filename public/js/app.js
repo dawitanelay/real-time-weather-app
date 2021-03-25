@@ -20,18 +20,19 @@ const addrss= search.value
 
 messageOne.textContent = 'Loadding...'
 messageTwo.textContent = ''
-messageThree.textContent = ' Have a Great Day 😊!'
+messageThree.textContent = ' '
 
 fetch('/weather?address='+ addrss).then((response) => {
     response.json().then((data) => {
         if (data.error) {
           return  messageOne.textContent = data.error
             
-        } else {
+        } else { 
             messageOne.textContent = data.location 
             messageTwo.textContent = data.forcastdata
-            console.log(data.location)
-            console.log(data.forcastdata)
+            messageThree.textContent = 'Have a Great Day 😊'
+            // console.log(data.location)
+            // console.log(data.forcastdata)
         }
     })  
 })
