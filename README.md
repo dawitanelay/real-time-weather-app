@@ -4,8 +4,6 @@ The website use data form [maxpox.com](https://www.mapbox.com/) and [weatherstac
 - Providing latitude and longitude, weatherstack api  retrieve instant, accurate weather information in JSON format.
 
 # running 
-1. git clone 
-2. dokcer-compose up 
-
-
+  $ git clone 
+  $ docker-compose up
 
