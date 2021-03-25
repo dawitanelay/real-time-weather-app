@@ -3,15 +3,15 @@ const request = require('request')
 
 
 
-const forcast =(latitude,longtitude,callback)=>
+const forcast =(latitude,longtitude,callback)=> 
 {
-    const url ='http://api.weatherstack.com/current?access_key=393de59bc0e0aff5ee92f61689c92a4d&query=' + latitude +','+ longtitude 
+    const url ='http://api.weatherstack.com/current?access_key=190c4eb3cae5ddd374b68c8e52905c4e&query=' + latitude +','+ longtitude 
    
 
     request({url:url,json:true},(error,{body})=>{
      if(error)
      {
-        callback('Unable to connect to weather web service ')
+        callback('Unable to connect to weather web service ') 
      }
      else if(body.error)
      {

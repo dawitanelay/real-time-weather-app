@@ -9,9 +9,9 @@ const gecode =(address,callback)=>
      if(error)
      {
          callback('unable to connect to  location serviece')
-     }else if(body.features==0)
+     }else if(body.features.length === 0) 
      {
-        callback('Unable to fined location. Try another search')
+        callback('Unable to find location. Try another search.', undefined)
      }
      else
      {
