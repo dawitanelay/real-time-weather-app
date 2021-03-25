@@ -13,5 +13,3 @@ The website use data form [maxpox.com](https://www.mapbox.com/) and [weatherstac
 ```
 Browse  http://localhost:8080
   
-# priview 
-[]
