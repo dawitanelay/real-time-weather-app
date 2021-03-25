@@ -1,2 +1,4 @@
-# realtime-weather-websit
+# Real time weather-app using node js. It use data form [maxbox.com](https://www.mapbox.com/) and [weatherstack.com](https://weatherstack.com/)
+
+
 
