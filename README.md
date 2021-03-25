@@ -6,6 +6,7 @@ The website use data form [maxpox.com](https://www.mapbox.com/) and [weatherstac
 # running 
 ```sh
   $ git clone https://github.com/dawitanelay/real-time-weather-app.git
+  $ cd real-time-weather-app
   $ docker-compose up
 
 
