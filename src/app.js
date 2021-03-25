@@ -32,6 +32,7 @@ res.render('index',{
 
 
 app.get('/weather',(req,res)=>{
+    console.log(req.query.address) 
  
     if(!req.query.address)
 
@@ -44,7 +45,7 @@ app.get('/weather',(req,res)=>{
    
        gecode(req.query.address,(error,{latitude,longtidue,location}={})=>{
 
-        if(error)
+        if(error) 
         {
             return res.send({error})
         }
